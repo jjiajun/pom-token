@@ -59,3 +59,8 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 ## Unfreeze account
 - Enable token holders to transact with the token contract.
 
+# Requirements
+- Create a token that has mint, burn & freeze functionality
+- Only owner of contract should be able to mint, burn & freeze
+- Verify contract on Etherscan
+- Interact with the contract to show the various interaction flow
