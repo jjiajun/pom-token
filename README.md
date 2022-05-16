@@ -10,7 +10,7 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 
 #  How it works
 
-1. The token contract has already been deployed and verified on [Ropsten Etherscan](https://ropsten.etherscan.io/address/0x13119b3c54f632ebe515e3cD409383cFeC1ef188)
+1. The token contract has already been deployed and verified on [Ropsten Etherscan](https://ropsten.etherscan.io/address/0xC546B1dcF3c58B1EaE92D4833389B459C9e01f40)
 2. Upon loading the app, you will see a simple UI with the following buttons to interact with the token contract:
 
 ### Get Balance
