@@ -37,13 +37,13 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 1. The token contract has already been deployed and verified on Ropsten Etherscan
 2. Upon loading the app, you will see a simple UI with the following buttons to interact with the token contract:
 
-## Get Balance
+### Get Balance
 - Fetches the balance of POM tokens that you own
 
-## Check Total Supply
+### Check Total Supply
 - Fetches the total supply of POM tokens in the economy
 
-## Mint 3 Tokens
+### Mint 3 Tokens
 - Mints 3 POM tokens that are added to your Metamask wallet address. 3 POM tokens will be added to the total supply of POM too.
 - Only the owner of the contract can do this for now.
 
@@ -51,20 +51,23 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
   <img src="https://user-images.githubusercontent.com/90031266/168688327-c2692c89-0216-4ad8-be9a-8c718dde0f03.gif" />
 </div>
 
-## Burn 1 Token
+### Burn 1 Token
 - Burns (permanently destroy) 1 POM token under your wallet address. 1 POM token will be deducted from the total supply of POM too.
 - Only the owner of the contract can do this for now.
 
-## Freeze
+### Freeze
 - Prevents any token holder from making any transaction with the token contract.
 - Only the owner of the contract can do this for now.
 
-## Unfreeze account
+### Unfreeze account
 - Enable token holders to transact with the token contract.
 - Only the owner of the contract can do this for now.
 
-# Requirements
-- Create a token that has mint, burn & freeze functionality
-- Only owner of contract should be able to mint, burn & freeze
-- Verify contract on Etherscan
-- Interact with the contract to show the various interaction flow
+# Requirements checked
+- [x] Create a token that has mint, burn & freeze functionality
+- [x] Only owner of contract should be able to mint, burn & freeze
+- [x] Verify contract on Etherscan
+- [x] Interact with the contract to show the various interaction flow
+
+
+
