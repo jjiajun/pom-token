@@ -1,46 +1,61 @@
 # Pomelo Token (POM)
 
-# To deploy to the local network
+Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 
-You first need to start the local test node. To do so, open the CLI and run the following command:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#installation">Installation</a>
+    </li>
+    <li>
+      <a href="#usage--features">Usage / Features</a>
+    </li>
+    <li>
+      <a href="#built-with">Built With</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-`npx hardhat node`
 
-The list of addresses and private keys generated are test accounts and addresses created for us that we can use to deploy and test our smart contracts. Each account is also loaded with 10,000 fake Ether.
+# Installation
 
-Next, run this deploy script on the CLI:
+1. Clone this repository
+2. Navigate to this folder via your terminal and run ```npm i``` to install the NPM packages
+3. Once installed, run `npm start` to load the Create React App (CRA).
+4. Go to Metamask, scroll down and click "Import Tokens"
+5. Key in the token contract address ```0x13119b3c54f632ebe515e3cD409383cFeC1ef188```
+6. You will now be able to see how many tokens you have (0)
 
-`npx hardhat run scripts/deploy.js --network localhost`
+#  How it works
 
-Once this is executed, the smart contract should be deployed to the local test network and you will be able to start interacting with it. (note that test account #1 was used to deploy this contract)
+1. The token contract has already been deployed and verified on Ropsten Etherscan
+2. Upon loading the app, you will see a simple UI with the following buttons to interact with the token contract:
 
-You should see a similar output in the CLI:
+## Get Balance
+- Fetches the balance of POM tokens that you own
 
-`PomToken deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0`
+## Check Total Supply
+- Fetches the total supply of POM tokens in the economy
 
-This address is what we will use in the client application to interact with the smart contract. Store this address somewhere accessible! You will need to use it when connecting to it from the client application.
+## Mint 3 Tokens
+- Mints 3 POM tokens that are added to your Metamask wallet address. 3 POM tokens will be added to the total supply of POM too.
 
-# To deploy to Ropsten test network
+## Burn 1 Token
+- Burns (permanently destroy) 1 POM token under your wallet address. 1 POM token will be deducted from the total supply of POM too.
 
-Send yourself some Ether using a faucet
+## Freeze
+- Prevents any token holder from making any transaction with the token contract.
 
-Make sure that the Metamask account you are using is your own and not a shared one issued by Hardhat
+## Unfreeze account
+- Enable token holders to transact with the token contract.
 
-Create an Alchemy account and create an app there.
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/90031266/168686294-2d0cbaec-71e1-4be0-990d-c070c4428e7f.gif" />
+</div>
 
-Copy the API URL and paste it in your hardhat.config.js file
-
-Copy the private key of your Metamask account and paste it in hardhat.config.js file
-
-Run `npx hardhat run scripts/deploy.js --network ropsten`
-
-You should see a similar output in the CLI:
-
-`PomToken deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0`
-
-Once this is executed, the smart contract should be deployed to the Ropsten test network and you will be able to start interacting with it.
-
-Run `npm start` to load the CRA app.
-
-You can now mint, burn, freeze, get balance and check total supply using the UI. (You should interact with the app using the same Metamask account that was used to deploy the contract)
-# pom-token
