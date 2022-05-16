@@ -52,7 +52,7 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 - ```inpage.js:1 MetaMask - RPC Error: execution reverted: Pausable: paused```
 
 <div align="center">
-  <img src="Screenshot 2022-05-17 at 7 46 49 AM" src="https://user-images.githubusercontent.com/90031266/168699931-32d11cb6-210a-4f26-ab4c-4c141ce6d074.png" />
+  <img src="https://user-images.githubusercontent.com/90031266/168700155-7b1d625c-4e86-4ffe-8c2e-1f23b60e4e18.png" />
 </div>
 
 ### Unfreeze account
