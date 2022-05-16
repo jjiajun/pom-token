@@ -6,11 +6,11 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 
 1. Clone this repository
 2. Navigate to this folder via your terminal and run ```npm i``` to install the NPM packages
-3. Once installed, run `npm start` to load the Create React App (CRA).
+3. Once installed, run `npm start` to load the Create React App (CRA)
 
 #  How it works
 
-1. The token contract has already been deployed and verified on Ropsten Etherscan
+1. The token contract has already been deployed and verified on [Ropsten Etherscan](https://ropsten.etherscan.io/address/0x13119b3c54f632ebe515e3cD409383cFeC1ef188)
 2. Upon loading the app, you will see a simple UI with the following buttons to interact with the token contract:
 
 ### Get Balance
@@ -20,8 +20,8 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 - Fetches the total supply of POM tokens in the economy
 
 ### Mint 3 Tokens
-- Mints 3 POM tokens that are added to your Metamask wallet address. 3 POM tokens will be added to the total supply of POM too.
-- Only the owner of the contract can do this for now.
+- Mints 3 POM tokens that are added to your Metamask wallet address. 3 POM tokens will be added to the total supply of POM too
+- Only the owner of the contract can do this for now
 -  It takes up to 15s for each transaction to go through, therefore I will not be showing the Total Supply after minting due to the time-limit of GIFs
 
 <div align="center">
@@ -29,8 +29,8 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 </div>
 
 ### Burn 1 Token
-- Burns (permanently destroy) 1 POM token under your wallet address. 1 POM token will be deducted from the total supply of POM too.
-- Only the owner of the contract can do this for now.
+- Burns (permanently destroy) 1 POM token under your wallet address. 1 POM token will be deducted from the total supply of POM too
+- Only the owner of the contract can do this for now
 -  It takes up to 15s for each transaction to go through, therefore I will not be showing the Total Supply after burning due to the time-limit of GIFs
 
 <div align="center">
@@ -38,16 +38,16 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 </div>
 
 ### Freeze
-- Prevents any token holder from making any transaction with the token contract.
-- Only the owner of the contract can do this for now.
+- Prevents any token holder from making any transaction with the token contract
+- Only the owner of the contract can do this for now
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/90031266/168697405-4f79a1eb-a348-437f-9ed1-30d0196abdf5.gif" />
 </div>
 
 ### Unfreeze account
-- Enable token holders to transact with the token contract.
-- Only the owner of the contract can do this for now.
+- Enable token holders to transact with the token contract
+- Only the owner of the contract can do this for now
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/90031266/168697510-2d890157-937f-4cc6-af4e-af58321c1a22.gif" />
