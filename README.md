@@ -47,6 +47,14 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
   <img src="https://user-images.githubusercontent.com/90031266/168697405-4f79a1eb-a348-437f-9ed1-30d0196abdf5.gif" />
 </div>
 
+- After freezing, all transactions with the token contract will be reverted
+- If you try to mint tokens, your Metamask pop-up will not appear for you to sign and you will be see this warning in your Chrome DevTools Console:
+- ```inpage.js:1 MetaMask - RPC Error: execution reverted: Pausable: paused```
+
+<div align="center">
+  <img src="Screenshot 2022-05-17 at 7 46 49 AM" src="https://user-images.githubusercontent.com/90031266/168699931-32d11cb6-210a-4f26-ab4c-4c141ce6d074.png" />
+</div>
+
 ### Unfreeze account
 - Enable token holders to transact with the token contract
 - Only the owner of the contract can do this for now
