@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Pomelo Token (POM)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# To deploy to the local network
 
-## Available Scripts
+You first need to start the local test node. To do so, open the CLI and run the following command:
 
-In the project directory, you can run:
+`npx hardhat node`
 
-### `npm start`
+The list of addresses and private keys generated are test accounts and addresses created for us that we can use to deploy and test our smart contracts. Each account is also loaded with 10,000 fake Ether.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Next, run this deploy script on the CLI:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`npx hardhat run scripts/deploy.js --network localhost`
 
-### `npm test`
+Once this is executed, the smart contract should be deployed to the local test network and you will be able to start interacting with it. (note that test account #1 was used to deploy this contract)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You should see a similar output in the CLI:
 
-### `npm run build`
+`PomToken deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This address is what we will use in the client application to interact with the smart contract. Store this address somewhere accessible! You will need to use it when connecting to it from the client application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# To deploy to Ropsten test network
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Send yourself some Ether using a faucet
 
-### `npm run eject`
+Make sure that the Metamask account you are using is your own and not a shared one issued by Hardhat
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create an Alchemy account and create an app there.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Copy the API URL and paste it in your hardhat.config.js file
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Copy the private key of your Metamask account and paste it in hardhat.config.js file
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Run `npx hardhat run scripts/deploy.js --network ropsten`
 
-## Learn More
+You should see a similar output in the CLI:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`PomToken deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Once this is executed, the smart contract should be deployed to the Ropsten test network and you will be able to start interacting with it.
 
-### Code Splitting
+Run `npm start` to load the CRA app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can now mint, burn, freeze, get balance and check total supply using the UI. (You should interact with the app using the same Metamask account that was used to deploy the contract)
+# pom-token
