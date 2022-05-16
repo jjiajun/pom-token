@@ -7,9 +7,6 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 1. Clone this repository
 2. Navigate to this folder via your terminal and run ```npm i``` to install the NPM packages
 3. Once installed, run `npm start` to load the Create React App (CRA).
-4. Go to Metamask, scroll down and click "Import Tokens"
-5. Key in the token contract address ```0x13119b3c54f632ebe515e3cD409383cFeC1ef188```
-6. You will now be able to see how many tokens you have (0)
 
 #  How it works
 
