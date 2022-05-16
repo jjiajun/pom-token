@@ -45,6 +45,7 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 
 ## Mint 3 Tokens
 - Mints 3 POM tokens that are added to your Metamask wallet address. 3 POM tokens will be added to the total supply of POM too.
+- Only the owner of the contract can do this for now.
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/90031266/168688327-c2692c89-0216-4ad8-be9a-8c718dde0f03.gif" />
@@ -52,12 +53,15 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 
 ## Burn 1 Token
 - Burns (permanently destroy) 1 POM token under your wallet address. 1 POM token will be deducted from the total supply of POM too.
+- Only the owner of the contract can do this for now.
 
 ## Freeze
 - Prevents any token holder from making any transaction with the token contract.
+- Only the owner of the contract can do this for now.
 
 ## Unfreeze account
 - Enable token holders to transact with the token contract.
+- Only the owner of the contract can do this for now.
 
 # Requirements
 - Create a token that has mint, burn & freeze functionality
