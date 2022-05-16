@@ -31,13 +31,25 @@ Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
 - Burns (permanently destroy) 1 POM token under your wallet address. 1 POM token will be deducted from the total supply of POM too.
 - Only the owner of the contract can do this for now.
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/90031266/168697396-1a8b6c67-2893-4e8a-8bf9-aa350237e3a1.gif" />
+</div>
+
 ### Freeze
 - Prevents any token holder from making any transaction with the token contract.
 - Only the owner of the contract can do this for now.
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/90031266/168697405-4f79a1eb-a348-437f-9ed1-30d0196abdf5.gif" />
+</div>
+
 ### Unfreeze account
 - Enable token holders to transact with the token contract.
 - Only the owner of the contract can do this for now.
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/90031266/168697510-2d890157-937f-4cc6-af4e-af58321c1a22.gif" />
+</div>
 
 # Requirements checked
 - [x] Create a token that has mint, burn & freeze functionality
