@@ -1,6 +1,6 @@
 # Pomelo Token (POM)
 
-Pom Token is a simple ERC20 token with mint, burn and freeze functionalities.
+Pom Token is an ERC20 token with mint, burn and freeze functionalities.
 
 # Installation
 
